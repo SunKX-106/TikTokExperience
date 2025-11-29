@@ -70,7 +70,7 @@ com.example.tiktokexperience
 
 🚀 运行本项目
 1. 克隆代码
-   git clone https://github.com/<你的账号>/TikTokExperience.git
+   git clone https://github.com/<SunKX-106>/TikTokExperience.git
 2. 打开 Android Studio
 支持 Android Studio Giraffe 及以上版本
 3. 运行到模拟器或真机即可展示瀑布流体验页
