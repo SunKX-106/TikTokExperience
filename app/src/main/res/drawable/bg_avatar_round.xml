@@ -1,0 +1,4 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="100dp" />
+    <solid android:color="#00FFFFFF"/><!-- 透明也可以！必须要有 solid 才能生成 outline -->
+</shape>

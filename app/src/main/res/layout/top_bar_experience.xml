@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#111"
+    android:paddingTop="12dp"
+    android:paddingBottom="8dp">
+
+    <!-- 第一行：菜单图标 + 横向 Tab + 搜索按钮 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <!-- 左侧菜单 -->
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_menu"
+            android:tint="#fff"
+            android:layout_marginRight="12dp" />
+
+        <!-- 横向滑动 Tabs -->
+        <HorizontalScrollView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- 精选 -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="精选"
+                    android:textColor="#aaa"
+                    android:padding="8dp"
+                    android:layout_marginRight="22dp"
+                    android:textSize="16sp"/>
+
+                <!-- 经验（选中） -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="经验"
+                        android:textColor="#fff"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:padding="8dp"/>
+
+                    <View
+                        android:layout_width="18dp"
+                        android:layout_height="3dp"
+                        android:background="#fff"/>
+                </LinearLayout>
+
+                <!-- 直播 -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="直播"
+                    android:textColor="#aaa"
+                    android:padding="8dp"
+                    android:layout_marginLeft="22dp" />
+
+                <!-- 热点 -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="热点"
+                    android:textColor="#aaa"
+                    android:padding="8dp"
+                    android:layout_marginLeft="22dp"/>
+
+                <!-- 关注 -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="关注"
+                    android:textColor="#aaa"
+                    android:padding="8dp"
+                    android:layout_marginLeft="22dp"/>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+
+        <ImageButton
+            android:id="@+id/btnSwitch"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_switch"
+            android:background="@android:color/transparent"
+            android:tint="#FFFFFF"
+            android:padding="5dp"
+            android:layout_marginRight="6dp"/>
+
+        <!-- 右侧椭圆搜索按钮 -->
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="6dp"
+            android:tint="#fff"
+            android:src="@drawable/ic_search"/>
+    </LinearLayout>
+
+</LinearLayout>
